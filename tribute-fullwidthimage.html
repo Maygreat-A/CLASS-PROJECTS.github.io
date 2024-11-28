@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" type="text/css" href="tributefull.css">
+    <script src="tribute.js" defer></script>
+    </head>
+    <body>
+
+    <!-- <header class="header">
+               
+        <div id="title">
+          <h1>School of Science and Technology</h1>
+          <p> Nurturing Innovators</p>
+        </div>
+
+    
+ Header with Buttons -->
+<header class="header">
+
+  <div id="title">
+    <h1>School of Science and Technology</h1>
+    <p>Nurturing Innovators</p>
+  </div>
+
+  <div class="left">
+    <button type="button" onclick="showModal(true)">Signup</button>
+  </div>
+  <div class="right">
+    <button type="button" onclick="showModal(false)">Login</button>
+  </div>
+</header>
+
+<!-- Login/Signup Modal -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <form id="authForm">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <div id="confirmPasswordField" style="display: none;">
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      </div>
+      
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+        
+      </header>
+     
+      <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#tribute-info">About Us</a>
+        <a href="#">Contacts</a>
+    </nav>
+
+      <main id="main">
+        <div id="img-div">
+          
+          <figcaption id="img-caption">WELCOME TO THE SCHOOL OF COMPUTING SCIENCES</figcaption>
+        
+          <a href="https://www.usiu.ac.ke/" id="tribute-link" target="_blank">
+            <button id="mainbutton">Visit Website</button>
+          </a>
+          </div>
+
+          
+        <div id="tribute-info">
+          <div id="tribute-info_section1">
+          <p>The programming languages covered include:</p>
+          <ul>
+            <li> Python — Artificial Intelligence & Machine Learning </li>
+            <li> JavaScript — Rich Interactive Web Development </li>
+            <li> Java — Enterprise Application Development         </li>
+            <li> R — Data Analysis </li>
+            <li> C/C++ — Operating Systems and System Tools</li>
+            <li> Golang — Server-Side Programming</li>
+            <li> C# — Application & Web Development Using .NET</li>
+            <li> PHP — Web Development</li>
+          </ul>
+          </div>
+
+          <div id="tribute-info_section2">
+            <section id="tablesection">
+              <h1>Courses Offered</h1>
+              <table>
+                  <caption>We offer the following:</caption>
+                  <thead>
+                      <tr class="tableheader">
+                          <th>Name</th>
+                          <th>Description</th>
+                          <th>Cost</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="tablebody rowcolor">
+                          <td>Computer Science</td>
+                          <td class="tabledescription">Designing and building computers and computer programs.</td>
+                          <td>Ksh 450,000</td>
+                      </tr>
+                      <tr class="tablebody rowcolor2">
+                          <td>Information Technology</td>
+                          <td class="tabledescription">Maintaining and troubleshooting computers,their networks, systems, and databases to ensure they run smoothly.</td>
+                          <td>Ksh 350,000</td>
+                      </tr>
+                      <tr class="tablebody rowcolor">
+                          <td>Data Science</td>
+                          <td class="tabledescription">Scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge from data across a broad range of application domains.</td>
+                          <td>Ksh 550,000</td>
+                      </tr>
+                      <tr class="tablebody rowcolor2">
+                          <td>Cyber Security</td>
+                          <td class="tabledescription">Practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks.</td>
+                          <td>Ksh 550,000</td>
+                      </tr>
+  
+                  </tbody>
+              </table>
+          </section>
+
+          </div>
+          </div>
+       <div id="section2">
+        
+          <h2 style="text-align: center;">Give Us Your Feedback:</h2>
+        </div>
+         
+        <div id="Simple_form">
+
+        
+        <div class="form-container">
+            <form id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            <p id="formMessage" style="color: red;"></p>
+        </div>
+      </div>
+    </div>
+<div>
+
+  <h3>Start By Picking your Course Today:</h3>
+  
+    <div class="flex-container">
+      
+        <div><a href=https://www.usiu.ac.ke/usiuonline class="styled-link">Online Courses Offered:</a></div>
+        <div><a href=https://www.usiu.ac.ke/undergraduate-programs/ class="styled-link">Undergraduate courses:</a></div>
+      
+        <div><a href=https://www.usiu.ac.ke/masters-programs/ class="styled-link">Masters Programs:</a> </div>
+        <div><a href=https://www.usiu.ac.ke/doctoral-programs/ class="styled-link">Doctoral Programs:</a></div>
+     
+      </div>
+     
+
+    <div id="section3">
+      <div id="jokeContainer">
+        <h1 id="h1joke">Joke Generator</h1>
+        <button id="generateButton">Generate Jokes</button>
+        <div id="sliderLabel">Number of Jokes: <span id="jokeCount">1</span></div>
+        <input type="range" id="slider" min="1" max="5" value="1">
+        <div id="jokesContainer"></div>
+
+    
+        
+      </main>
+
+    <footer>
+        @USIU 2024
+    </footer>
+    </body>
+</html>
